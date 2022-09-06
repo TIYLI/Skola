@@ -14,6 +14,13 @@ void SchoolSystem::Run()
 		std::cin.get();
 		int input;
 		if (input = 1) AddStudent();
+		
+		switch (true)
+		{
+		case 1:
+			"1";
+			break;
+		}
 	}
 }
 
@@ -22,6 +29,7 @@ void SchoolSystem::AddStudent()
 	Student student;
 	student.name = "bla";
 	student.age = 123;
+	student.info = "�r tolv o luktar kiss";
 	students.push_back(student);
 }
 

@@ -9,17 +9,57 @@ void SchoolSystem::Run()
 		//Input
 		//Feedback
 
-		std::cout << "loop: " << counter << "\n";
-		counter++;
-		std::cin.get();
-		int input;
-		if (input = 1) AddStudent();
 		
-		switch (true)
+		
+		
+		
+		int input;
+		std::cout << "type 1 if you want to add persson" << "\n";
+		std::cout << "type 2 if you want to add a new class" << "\n";
+		std::cout << "type 3 if you want to add persson to an existing schoolclass" << "\n";
+		std::cout << "type 4 if you want to check if a persson is in the system" << "\n";
+		std::cout << "type 5 if you want to get information of a spesific person" << "\n";
+		std::cout << "type 6 if you want to remove a person from a class" << "\n";
+		std::cout << "type 7 if you want to remove a person from the system" << "\n";
+		std::cout << "type 8 if you want to get the names of the persons in a class" << "\n";
+		std::cin >> input;
+		
+		switch (input)
 		{
 		case 1:
 			"1";
+			AddStudent();
 			break;
+
+		case 2:
+			"2";
+			AddClass();
+			break;
+
+		case 3:
+			"3";
+			AddINClass();
+
+		case 4:
+			"4";
+			CheckStudent();
+
+		case 5:
+			"5";
+			GetInfo();
+
+		case 6:
+			"6";
+			RemoveFromClass();
+
+		case 7:
+			"7";
+			RemoveFromSystem();
+
+		case 8:
+			"8";
+			GetNamesFromClass();
+
 		}
 	}
 }
@@ -27,12 +67,44 @@ void SchoolSystem::Run()
 void SchoolSystem::AddStudent()
 {
 	Student student;
-	student.name = "bla";
-	student.age = 123;
-	student.info = "ï¿½r tolv o luktar kiss";
+	student.name = "theo";
+	student.info = "är tolv o luktar kiss och är bög och extremt het";
+	student.age = 12;
 	students.push_back(student);
 }
 
 void SchoolSystem::RemoveStudent()
+{
+}
+
+void SchoolSystem::RemoveStudent2()
+{
+}
+
+void SchoolSystem::AddClass()
+{
+}
+
+void SchoolSystem::AddINClass()
+{
+}
+
+void SchoolSystem::CheckStudent()
+{
+}
+
+void SchoolSystem::GetInfo()
+{
+}
+
+void SchoolSystem::RemoveFromClass()
+{
+}
+
+void SchoolSystem::RemoveFromSystem()
+{
+}
+
+void SchoolSystem::GetNamesFromClass()
 {
 }

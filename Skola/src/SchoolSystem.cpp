@@ -2,6 +2,14 @@
 
 void SchoolSystem::Run()
 {
+	std::cout << "type 1 if you want to add persson" << "\n";
+	std::cout << "type 2 if you want to add a new class" << "\n";
+	std::cout << "type 3 if you want to add persson to an existing schoolclass" << "\n";
+	std::cout << "type 4 if you want to check if a persson is in the system" << "\n";
+	std::cout << "type 5 if you want to get information of a spesific person" << "\n";
+	std::cout << "type 6 if you want to remove a person from a class" << "\n";
+	std::cout << "type 7 if you want to remove a person from the system" << "\n";
+	std::cout << "type 8 if you want to get the names of the persons in a class" << "\n";
 	int counter = 0;
 	while (true)
 	{
@@ -14,14 +22,7 @@ void SchoolSystem::Run()
 		
 		
 		int input;
-		std::cout << "type 1 if you want to add persson" << "\n";
-		std::cout << "type 2 if you want to add a new class" << "\n";
-		std::cout << "type 3 if you want to add persson to an existing schoolclass" << "\n";
-		std::cout << "type 4 if you want to check if a persson is in the system" << "\n";
-		std::cout << "type 5 if you want to get information of a spesific person" << "\n";
-		std::cout << "type 6 if you want to remove a person from a class" << "\n";
-		std::cout << "type 7 if you want to remove a person from the system" << "\n";
-		std::cout << "type 8 if you want to get the names of the persons in a class" << "\n";
+
 		std::cin >> input;
 		
 		switch (input)
@@ -66,11 +67,19 @@ void SchoolSystem::Run()
 
 void SchoolSystem::AddStudent()
 {
+	std::string nameInput;
+	int ageInput;
+	std::cout << "What is the students name: " << "\n";
+	
+	
+	
+	
 	Student student;
-	student.name = "theo";
-	student.info = "är tolv o luktar kiss och är bög och extremt het";
+	student.name = "";
+	student.info = "";
 	student.age = 12;
 	students.push_back(student);
+	
 }
 
 void SchoolSystem::RemoveStudent()

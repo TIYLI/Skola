@@ -30,6 +30,10 @@ void SchoolSystem::Run()
 		case 1:
 			"1";
 			AddStudent();
+			
+			
+			std::cout << "What is the students name: " << "\n";
+			
 			break;
 
 		case 2:
@@ -65,19 +69,14 @@ void SchoolSystem::Run()
 	}
 }
 
-void SchoolSystem::AddStudent()
+void SchoolSystem::AddStudent(std::string newName, std::string newInfo, int newAge)
 {
-	std::string nameInput;
-	int ageInput;
-	std::cout << "What is the students name: " << "\n";
-	
-	
 	
 	
 	Student student;
-	student.name = "";
-	student.info = "";
-	student.age = 12;
+	student.name = newName;
+	student.info = newInfo;
+	student.age = newAge;
 	students.push_back(student);
 	
 }

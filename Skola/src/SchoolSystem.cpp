@@ -31,7 +31,6 @@ void SchoolSystem::Run()
 			"1";
 			AddStudent();
 			
-			
 			std::cout << "What is the students name: " << "\n";
 			
 			break;
@@ -69,10 +68,13 @@ void SchoolSystem::Run()
 	}
 }
 
-void SchoolSystem::AddStudent(std::string newName, std::string newInfo, int newAge)
+void SchoolSystem::AddStudent()
 {
 	
-	
+	std::string newName;
+	std::string newInfo;
+	int newAge;
+
 	Student student;
 	student.name = newName;
 	student.info = newInfo;
@@ -95,6 +97,33 @@ void SchoolSystem::AddClass()
 
 void SchoolSystem::AddINClass()
 {
+	std::string name;
+	std::string schoolclass;
+
+	//feedback namn
+	std::cin >> name;
+
+	//feedback class
+	std::cin >> schoolclass;
+
+	for (auto& classes : SchoolClasses)
+	{
+		
+		if (classes != schoolclass) return;
+		
+
+	}
+
+	for (auto& students : students)
+	{
+
+		if (students.name == name) students.schoolClass = schoolclass;
+
+	}
+
+
+
+	//output
 }
 
 void SchoolSystem::CheckStudent()
@@ -116,3 +145,9 @@ void SchoolSystem::RemoveFromSystem()
 void SchoolSystem::GetNamesFromClass()
 {
 }
+
+
+
+
+
+

@@ -7,7 +7,7 @@ class SchoolSystem
 {
 public:
 	void Run();
-	void AddStudent(std::string newName, std::string newClass, int newAge);
+	void AddStudent();
 	void RemoveStudent();
 	void RemoveStudent2();
 	void AddClass();
